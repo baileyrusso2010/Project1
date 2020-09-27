@@ -1,11 +1,57 @@
 <!DOCTYPE html>
-    <head>
+ <head>
         <meta charset="utf-8">
-        <title>Project1</title>
-        <!--<link rel="stylesheet" href="">-->
+        <title>Image Meta Data</title>
+        
+        <link rel="icon" type="image/png" href="theScream.jpg"/>
+        <link rel="stylesheet" href="styles/my-styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <script src = "src/barLIB.js"></script>
+        <script src = "src/index.js"></script>
+        
+        <!-- font-family: 'Fira Sans', sans-serif; -->
+
     </head>
 
 
     <body>
- </body>
+
+        <h1>Image Pixelizer</h1>
+        <p id = "intro">Welcome to Image Pixelizer. This project allows you the user to upload your own image and it will convert them into pixels.
+            From there, you will be able to minipulate the image my moving your mouse and changing the settings.
+        </p>
+           
+        <canvas id ="myCanvas"></canvas>
+
+        <section id ="controls">
+
+            <div class = "item">
+                <label for="imageInput">Choose an image to pixelize</label>
+                <input name = "imageInput" type = "file" class="inputfile" id="file" >
+            </div>
+            <div class = "item">
+                <label for="points">Slide this value to change the mouse radius impulse</label>
+                <input type="range" id="points" name="points" min="0" max="150" value = "1">
+
+            </div>
+            <div class = "item">
+                <label for="mouse">Slide this to increase the mouse radius</label>
+                <input type="range" id="mouse" name="mouse" min="1" max="25" value = "10">
+            </div>
+
+            <div class = "item">
+                <label for="shapes">Choose a pixel shape:</label>
+                <select name = "shapes" id ="shapes">
+                <option value = "circle">Circles</option>
+                <option value = "squares">Squares</option>
+            </div>
+            </select>
+
+        </section>
+    <br>
+        <footer>ImagePixelizer.com®</footer>
+        
+    </body>
+    
 </html>

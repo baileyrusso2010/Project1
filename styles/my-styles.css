@@ -1,0 +1,84 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #8b45cc;
+
+}
+html {
+    position: relative;
+    min-height: 100%;
+}
+h1{
+    text-align: center;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#intro{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 800px;
+    overflow-wrap: normal;
+    color: white;
+
+
+}
+
+
+canvas {
+    
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: white;
+    border-radius: 20px;
+    border: black;
+
+}
+
+img{
+    display:none;
+}
+
+
+footer{
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+
+}
+
+#controls{
+    
+    background-color: #c283fc;
+    
+    border: 5px solid black;
+    border-radius: .5em;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 1em;
+
+}
+.item{
+    width: 150px;
+    height: 80px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(111,41,97,.3);
+    border: 2px solid rgba(111,41,97,.5);
+}
+
+input[type='file'] {
+    color: transparent;
+  }
